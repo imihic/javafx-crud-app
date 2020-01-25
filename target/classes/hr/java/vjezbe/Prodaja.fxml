@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.prodajaController">
+   <left>
+      <Pane prefHeight="451.0" prefWidth="469.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="151.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artikl" />
+            <ComboBox fx:id="odabirArtikla" layoutX="195.0" layoutY="54.0" prefWidth="150.0" />
+            <Text layoutX="137.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Korisnik" />
+            <ComboBox fx:id="odabirKorisnika" layoutX="195.0" layoutY="92.0" prefWidth="150.0" />
+            <Text layoutX="104.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datum objave" />
+            <DatePicker fx:id="odabirDatuma" layoutX="195.0" layoutY="127.0" />
+            <Button fx:id="pretraga" layoutX="204.0" layoutY="193.0" mnemonicParsing="false" onAction="#pretrazi" text="Pretraga" />
+            <TableView fx:id="prodajaTable" layoutX="-4.0" layoutY="251.0" prefHeight="200.0" prefWidth="473.0">
+              <columns>
+                <TableColumn fx:id="oglasCollumn" prefWidth="155.0" text="Oglas" />
+                <TableColumn fx:id="korisnikCollumn" prefWidth="149.0" text="Korisnik" />
+                  <TableColumn fx:id="datumCollumn" prefWidth="168.0" text="Datum" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </left>
+</BorderPane>

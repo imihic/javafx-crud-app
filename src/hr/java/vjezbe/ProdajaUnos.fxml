@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.ProdajaUnosController">
+   <center>
+      <Pane prefHeight="469.0" prefWidth="503.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="171.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artikl" />
+            <ComboBox fx:id="odabirArtikla" layoutX="218.0" layoutY="110.0" prefWidth="150.0" />
+            <Text layoutX="157.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Korisnik" />
+            <ComboBox fx:id="odabirKorisnika" layoutX="218.0" layoutY="146.0" prefWidth="150.0" />
+            <Text layoutX="124.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datum objave" />
+            <DatePicker fx:id="odabirDatuma" layoutX="218.0" layoutY="185.0" />
+            <Button layoutX="226.0" layoutY="279.0" mnemonicParsing="false" onAction="#unesi" text="Unesi" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

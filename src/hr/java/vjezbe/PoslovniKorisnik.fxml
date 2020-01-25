@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.PoslovniController">
+   <center>
+      <Pane prefHeight="559.0" prefWidth="554.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="148.0" layoutY="53.0" strokeWidth="0.0" text="Pretrazivanje poslovnih korisnika" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="257.13671875" />
+            <TextField fx:id="naziv" layoutX="226.0" layoutY="109.0" />
+            <Text layoutX="178.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Naziv" textAlignment="CENTER" wrappingWidth="47.859375" />
+            <TextField fx:id="web" layoutX="226.0" layoutY="142.0" />
+            <Text layoutX="178.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Web" textAlignment="CENTER" wrappingWidth="47.859375" />
+            <TextField fx:id="email" layoutX="226.0" layoutY="176.0" />
+            <Text layoutX="178.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" textAlignment="CENTER" wrappingWidth="47.859375" />
+            <Text layoutX="157.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="68.859375" />
+            <Button fx:id="pretraziButton" layoutX="251.0" layoutY="255.0" mnemonicParsing="false" onAction="#pretrazi" text="Pretrazi" />
+            <TableView fx:id="poslovniTable" layoutY="301.0" prefHeight="258.0" prefWidth="554.0">
+              <columns>
+                <TableColumn fx:id="nazivCollumn" prefWidth="75.0" text="Naziv" />
+                <TableColumn fx:id="webCollumn" prefWidth="75.0" text="Web" />
+                  <TableColumn fx:id="emailCollumn" prefWidth="75.0" text="Email" />
+                  <TableColumn fx:id="telefonCollumn" prefWidth="75.0" text="Telefon" />
+              </columns>
+            </TableView>
+            <TextField fx:id="telefon" layoutX="227.0" layoutY="210.0" />
+            <Text layoutX="179.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefon:" textAlignment="CENTER" wrappingWidth="47.859375" />
+         </children></Pane>
+   </center>
+</BorderPane>

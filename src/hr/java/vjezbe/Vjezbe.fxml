@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="371.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.java.vjezbe.VjezbeController">
+   <center>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="788.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Artikli">
+               <items>
+                  <Menu mnemonicParsing="false" text="Automobili">
+                    <items>
+                      <MenuItem fx:id="odabirAutomobiliPretraga" mnemonicParsing="false" onAction="#pretragaAutomobiliWindow" text="Pretraga" />
+                        <MenuItem fx:id="odabirAutomobiliUnos" mnemonicParsing="false" onAction="#unosAutomobiliWindow" text="Unos" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Stanovi">
+                     <items>
+                        <MenuItem fx:id="odabirStanoviPretraga" mnemonicParsing="false" onAction="#pretragaStanoviWindow" text="Pretraga" />
+                        <MenuItem fx:id="odabirStanoviUnos" mnemonicParsing="false" onAction="#unosStanoviWindow" text="Unos" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Usluge">
+                    <items>
+                      <MenuItem fx:id="odabirUslugePretraga" mnemonicParsing="false" onAction="#pretragaUslugeWindow" text="Pretraga" />
+                        <MenuItem fx:id="odabirUslugeUnos" mnemonicParsing="false" onAction="#unosUslugeWindow" text="Unos" />
+                    </items>
+                  </Menu>
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Korisnici">
+               <items>
+                  <Menu mnemonicParsing="false" text="Privatni">
+                    <items>
+                      <MenuItem fx:id="odabirPrivatniPretraga" mnemonicParsing="false" onAction="#pretragaPrivatniWindow" text="Pretraga" />
+                        <MenuItem fx:id="odabirPrivatniUnos" mnemonicParsing="false" onAction="#unosPrivatniWindow" text="Unos" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Poslovni">
+                    <items>
+                      <MenuItem fx:id="odabirPoslovniPretraga" mnemonicParsing="false" onAction="#pretragaPoslovniWindow" text="Pretraga" />
+                        <MenuItem fx:id="odabirPoslovniUnos" mnemonicParsing="false" onAction="#unosPoslovniWindow" text="Unos" />
+                    </items>
+                  </Menu>
+               </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Prodaja">
+              <items>
+                <MenuItem fx:id="odabirProdajaPretraga" mnemonicParsing="false" onAction="#pretragaProdajaWindow" text="Pretraga" />
+                  <MenuItem fx:id="odabirProdajaUnos" mnemonicParsing="false" onAction="#unosProdajaWindow" text="Unos" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
